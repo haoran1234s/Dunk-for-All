@@ -1,0 +1,7 @@
+.page { position: fixed; inset: 0; overflow: hidden; background: #0b0f1a; }
+.bg-blur { position: absolute; inset: 0; width: 100%; height: 100%; filter: blur(24px) brightness(.5); transform: scale(1.1); }
+/* 按 1024x1536 原图比例完整显示，热区按百分比定位不会错位 */
+.map { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100vw; max-width: 66.667vh; }
+.map-img { display: block; width: 100%; }
+.spot { position: absolute; border-radius: 24rpx; transition: all .2s; }
+.spot.on { box-shadow: 0 0 0 4rpx #ff7a1a, 0 0 40rpx 8rpx rgba(255,122,26,.7); background: rgba(255,122,26,.15); }

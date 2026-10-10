@@ -1,0 +1,9 @@
+<view class="page">
+  <!-- 背景图按 2:3 比例铺满屏幕（cover），热区按图片百分比定位，保证始终压在图里的“开始训练”按钮上 -->
+  <view class="stage" style="width:{{w}}px;height:{{h}}px;left:{{x}}px;top:{{y}}px;">
+    <image class="bg" src="/assets/splash.jpg" mode="scaleToFill" />
+    <view class="start {{pressed ? 'pressed' : ''}}" hover-class="none"
+          bindtouchstart="onDown" bindtouchend="onUp" bindtouchcancel="onUp" bindtap="onStart"
+          aria-role="button" aria-label="开始训练"></view>
+  </view>
+</view>

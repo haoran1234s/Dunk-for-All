@@ -1,0 +1,7 @@
+page { background: #0b0f1a; height: 100%; overflow: hidden; }
+.page { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+.stage { position: absolute; }
+.bg { width: 100%; height: 100%; display: block; }
+/* 图中按钮位置：x 24%–76%，y 83.6%–91.6% */
+.start { position: absolute; left: 24%; width: 52%; top: 83.6%; height: 8%; border-radius: 999px; transition: transform .12s, background .12s; }
+.start.pressed { transform: scale(0.96); background: rgba(255,255,255,0.12); }
