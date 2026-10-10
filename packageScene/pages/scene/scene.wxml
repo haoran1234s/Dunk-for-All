@@ -1,0 +1,11 @@
+<view class="page">
+  <image class="bg-blur" src="/packageScene/assets/venues.jpg" mode="aspectFill" />
+  <view class="map">
+    <image class="map-img" src="/packageScene/assets/venues.jpg" mode="widthFix" />
+    <view wx:for="{{venues}}" wx:key="id"
+      class="spot {{selected === item.id ? 'on' : ''}}"
+      style="left:{{item.x}}%;top:{{item.y}}%;width:{{item.w}}%;height:{{item.h}}%;"
+      data-id="{{item.id}}" bindtap="onTap"></view>
+  </view>
+  <nav-bar title="" transparent="{{true}}" />
+</view>

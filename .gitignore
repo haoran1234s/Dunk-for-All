@@ -1,0 +1,10 @@
+# dependencies
+node_modules/
+
+# WeChat DevTools private config and built npm
+project.private.config.json
+miniprogram_npm/
+
+# OS
+.DS_Store
+Thumbs.db

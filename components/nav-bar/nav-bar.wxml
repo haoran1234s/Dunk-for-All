@@ -1,0 +1,5 @@
+<view class="nav {{transparent ? 'clear' : ''}}" style="padding-top:{{nav.statusBarHeight}}px;height:{{nav.navBarHeight}}px;padding-right:{{nav.menuRight}}px;">
+  <view wx:if="{{back}}" class="back" bindtap="onBack">‹</view>
+  <view class="title">{{title}}</view>
+</view>
+<view wx:if="{{!transparent}}" style="height:{{nav.totalHeight}}px;"></view>
